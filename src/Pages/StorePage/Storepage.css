@@ -1,0 +1,166 @@
+/* .storeArea {
+  top: 0px;
+} */
+
+.main-heading {
+  text-align: center;
+  font-size: 20;
+  align-self: "center";
+}
+.mainStore-container {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+.store-stepper {
+  width: 100%;
+  padding: 1rem;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between; 
+}
+
+.storeImg img {
+  width: 50%;
+  height: 50%;
+}
+
+.next button {
+  width: 150px;
+}
+.back-btn button{
+  width: 150px; 
+}
+.create-btn button{
+  width: 150px;
+}
+.css-ascpo7-MuiStepLabel-root .css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-active {
+  color:var(--button-bg-color) !important;
+  z-index: 1;
+}
+.css-vnkopk-MuiStepLabel-iconContainer .css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-completed {
+  color:var(--text-color) !important;
+  z-index: 1;
+}
+
+.css-117w1su-MuiStepIcon-text{
+  fill:var(--step-text) !important;
+}
+.css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root {
+  color:var(--step-bg-color) !important;
+}
+
+.css-1hv8oq8-MuiStepLabel-label.Mui-active {
+  color: var(--text-color) !important;
+}
+
+.css-1vyamtt-MuiStepLabel-labelContainer {
+  color: var(--step-bg-color) !important;
+}
+.css-1hv8oq8-MuiStepLabel-label.Mui-completed{
+  color: var(--text-color) !important;
+}
+
+/********************** Media Query start **************************/
+
+/* media query for laptop & tablet screen start*/
+
+@media screen and (max-width: 1040px) {
+  .mainStore-container {
+    display: block; 
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 3rem !important;
+  }
+  .mainStore-container .css-9npbnl-MuiFormLabel-root-MuiInputLabel-root {
+    font-size: 14px;
+  }
+  .mainStore-container .css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input{
+    font-size: 12px;
+  }
+  .mainStore-container .css-1jqq78o-placeholder{
+    font-size: 12px;
+  }
+
+  .store-section{
+    display: contents;
+  }
+    
+  .storeImg-container{
+    margin-bottom: 1rem;
+  }
+  .next button {
+    font-size: 10px;
+    width: 100px;
+  }
+  .saveStoreAddress-btn button{
+    font-size: 10px;
+    width: 100px;
+  }
+  .back-btn button{
+    width: 100px;  
+  }
+  .text-font{
+    font-size: 14px;
+  }
+  .create-btn button{
+    /* margin-bottom: 1rem; */
+    width: 150px;
+  }
+}
+
+/* media query for laptop & tablet screen end*/
+
+
+/* media query for mobile screen start*/
+
+@media screen and (max-width: 450px) {
+  .store-stepper {
+    width: 100%;
+    padding: 1rem;
+  }
+  .storeImg img {
+    width: 100%;
+  }
+  .store-stepper .css-m5vj9m-MuiStepper-root{
+    font-size: 14px;
+  }
+  .store-stepper{
+    font-size: 14px;
+  }
+  .store-stepper .css-MuiStepper-root{
+    width: 100%;
+  }
+  .store-stepper .css-10mg1vw-MuiStepper-root{
+    display: flex;
+    justify-content: center;
+  }
+  .store-stepper.css-ascpo7-MuiStepLabel-root .css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-active{
+    font-size: 16px;
+  }
+  .store-stepper .css-1hv8oq8-MuiStepLabel-label.MuiStepLabel-alternativeLabel{
+    font-size: 12px;
+  }
+  .buttonContainer{
+    /* display: block; */
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .next button {
+    font-size: 10px;
+    width: 100%;
+  }
+  .back-btn button{
+    margin-bottom: 1rem;
+    width: 100%;  
+  }
+  .create-btn button{
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  
+}
+/* media query for mobile screen end*/
+
+/********************** Media Query End **************************/

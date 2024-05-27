@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="gate.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="main-cart">
+      <div class="cart-content">
+        <div class="header-content">
+          <img
+            src="assets/images/website-logo.png"
+            alt="logo"
+            height="50"
+            width="60"
+          />
+          <h1>Blue Bill</h1>
+          <p>Activate your license to get started</p>
+        </div>
+
+        <div class="cart-input-field">
+          <div class="cart-email-type">
+            <label for="email">Email address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email address"
+            />
+            <div class="error-message" id="emailError"></div>
+          </div>
+        </div>
+
+        <div class="cart-key-type">
+          <label for="licenseKey">License Key</label>
+          <input
+            type="text"
+            id="licenseKey"
+            name="license"
+            placeholder="Enter your license key"
+          />
+          <div class="error-message" id="licenseKeyError"></div>
+        </div>
+
+        <button id="submitBtn">Activate license</button>
+      </div>
+    </div>
+
+    <!-- <script src="gate.js"></script> -->
+  </body>
+</html>

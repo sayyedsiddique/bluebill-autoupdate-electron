@@ -1,0 +1,43 @@
+.options-container {
+    width: 31%;
+    
+}
+
+.amount-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* margin: auto; */
+    /* border: 1px solid red; */
+    padding: 15px;
+}
+
+.payment-options-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.back-btn{
+    /* padding: 5px 20px; */
+    /* background-Color: var(--main-bg-color); */
+    /* border: none; */
+  /* color: dimgray; */
+}
+
+@media screen and (max-width: 425px) {
+
+    .payment-options-container {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+
+    .options-container {
+        width: 100%;
+        
+    }
+}

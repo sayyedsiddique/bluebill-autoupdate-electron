@@ -1,0 +1,52 @@
+.secondary_btn{
+    border: 1px solid var(--main-bg-color);
+    border-radius: 5px;
+    padding: 7px 20px;
+    color: var(--white-color);
+    background: var(--main-bg-color);
+    font-weight: 500;
+    /* letter-spacing: 1px; */
+}
+.secondary_btn:active {
+   background-color:var(--white-color);
+   color: var(--main-bg-color);
+}
+
+.secondary_btn:disabled{
+    background-color: var(--secondary-black-color) !important;
+    border: none !important;
+    color:  var(--white-color) !important;
+}
+
+.externalClass{
+    border: 1px solid var(--main-bg-color);
+    border-radius: 5px;
+    padding: 7px 20px;
+    background: var(--white-color);
+    font-weight: 500;
+    color: var(--main-bg-color);
+    font-size: 14px;
+    /* font-weight: 500; */
+    /* letter-spacing: 1px; */
+}
+.externalClass:active {
+    background-color: var(--main-bg-color);
+    color: var(--white-color);
+}
+
+.externalClass:disabled{
+    /* border: 2px solid  var(--secondary-black-color) !important; */
+    /* color:  var(--secondary-black-color) !important; */
+}
+
+
+@media screen and (max-width: 1024px) {
+    .externalClass {
+        font-size: 12px;
+    } 
+    .secondary_btn {
+        font-size: 12px;
+    }
+    
+}
+

@@ -1,0 +1,265 @@
+/* css for main div of storeSettingsPage */
+.storeSettingsPage {
+  display: inline-flex;
+  box-shadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px,
+    rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+  border-radius: 10px;
+  background-color: var(--topHeader-bg-color);
+}
+
+.license-status {
+  background-Color: green;
+  color: white;
+  padding: 5px;
+  border-Radius: 20px;
+  font-Size: 14px;
+  font-Weight: 500;
+  padding-left: 8px;
+  padding-right: 7px;
+}
+
+.license-validDate {
+  background-Color: red;
+  color: white;
+  padding: 5px;
+  border-Radius: 20px;
+  font-Size: 14px;
+  font-Weight: "600";
+  padding-Left: 8px;
+  padding-right: 10px;
+}
+
+.detailsContainer {
+  border-radius: 10px;
+}
+
+.css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root {
+  background-color: var(--cart-bg-color) !important;
+  color: var(--text-color) !important;
+}
+
+.css-yw020d-MuiAccordionSummary-expandIconWrapper {
+  color: var(--text-color) !important;
+}
+
+.css-yw020d-MuiAccordionSummary-expandIconWrapper {
+  color: var(--text-color) !important;
+}
+
+.css-15v22id-MuiAccordionDetails-root {
+  color: var(--text-color) !important;
+  background-color: var(--cart-bg-color) !important;
+}
+
+
+.store-details {
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  background-color: var(--white-color);
+}
+
+.cart {
+  padding: 20px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.cartMain {
+  border-radius: 10px;
+  width: 100%;
+  margin-top: 20px;
+  border: 2px solid var(--bbBorder);
+  overflow-y: scroll;
+  height: 100%;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.cartMain::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.cartMain {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.editButton {
+  width: auto;
+  background: var(--main-bg-color);
+  color: var(--white-color);
+  font-size: 18px;
+}
+
+/* css for store-image container start*/
+
+.ImageContainer {
+  border-radius: 30px;
+  height: 200px;
+  width: 100%;
+}
+
+.img-box {
+  width: 30%;
+}
+
+.storeImageContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.storeImageContainer img {
+  width: 100%;
+  height: 100%;
+
+}
+
+/* for store-image container end*/
+
+
+/* css for store-details container start*/
+
+.storeDetailsContainer {
+  background: var(--topHeader-bg-color);
+}
+
+.storeDetails-item h5 {
+  font-size: 1rem;
+}
+
+.storePropName {
+  font-weight: 600;
+}
+
+.dropzone {
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* css for store-image container end*/
+
+
+/********************** Media Query start **************************/
+
+/* media query for laptop & tablet screen start*/
+@media screen and (max-width: 1040px) {
+  .storeSettingsPage {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .img-box {
+    width: 80%;
+  }
+}
+
+/* media query for laptop & tablet screen end*/
+
+/* media query for mobile screen start*/
+
+@media screen and (max-width: 425px) {
+  .detailsContainer {
+    font-size: small;
+  }
+
+  .btn-container {
+    width: auto;
+  }
+
+  .img-file,
+  .img-input {
+    width: 100%;
+  }
+
+  .img-box,
+  .ImageContainer {
+    width: 275px;
+  }
+
+  .editButton {
+    width: auto;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .detailsContainer {
+    width: 100%;
+  }
+
+  .btn-container {
+    width: auto;
+  }
+
+  .del-btn,
+  .changeImg-btn {
+    width: 100%;
+    font-size: small;
+  }
+
+  .img-file,
+  .img-input {
+    width: 100%;
+    font-size: small;
+  }
+
+  .img-box,
+  .ImageContainer {
+    width: 180px;
+    height: auto;
+  }
+
+  .label-font {
+    font-size: medium;
+  }
+
+  .editButton {
+    width: 100%;
+    font-size: small;
+  }
+}
+
+@media (min-width: 370px) and (max-width: 395px) {
+  .detailsContainer {
+    width: 100%;
+    font-size: small;
+  }
+
+  .del-btn,
+  .changeImg-btn {
+    width: 100%;
+    font-size: small;
+  }
+
+  .btn-container {
+    width: auto;
+  }
+
+  .img-file,
+  .img-input {
+    width: 100%;
+  }
+
+  .img-box,
+  .ImageContainer {
+    width: 230px;
+    height: auto;
+  }
+
+  .label-font {
+    font-size: medium;
+  }
+
+  .editButton {
+    width: 100%;
+    font-size: small;
+  }
+}
+
+/* media query for mobile screen end*/
+
+/********************** Media Query end **************************/

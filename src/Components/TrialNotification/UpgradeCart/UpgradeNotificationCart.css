@@ -1,0 +1,42 @@
+.upgrade-notification {
+  background-image: linear-gradient(
+    to right,
+    #114e8f,
+    #4e85c0
+  ); /* Gradient from light blue to white */
+  color: #ffffff; /* Text color */
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Light box shadow */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.upgradeNotificaation-button button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #4caf50;
+  color: var(--white-color);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+@media (max-width: 425px) {
+  .upgrade-notification {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px;
+  }
+
+  .upgrade-notification-button button {
+    margin-top: 10px;
+    width: 100%;
+  }
+}

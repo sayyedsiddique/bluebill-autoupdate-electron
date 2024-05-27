@@ -1,0 +1,57 @@
+.trail-card {
+    /* border: 1px solid #ccc; */
+    /* border-radius: 5px; */
+    max-width: 400px;
+    color: var(--main-bg-color);
+    padding: 10px;
+    border-radius: 10px;
+    background: var(--white-color);
+}
+
+.trail-information-card {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.logo-container img {
+    max-width: 100%;
+    /* height: auto; */
+}
+
+.info-container {
+    flex: 1;
+    /* padding: 10px; */
+}
+
+p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.upgrade-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.upgrade-button  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #4CAF50; 
+    color: var(--white-color); 
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px; 
+    margin-top: 10px; 
+}
+
+.star-icon {
+    font-size: 24px; 
+    margin-right: 5px; 
+}

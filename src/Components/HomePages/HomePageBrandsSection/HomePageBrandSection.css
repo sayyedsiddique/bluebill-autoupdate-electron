@@ -1,0 +1,92 @@
+.brand-main-container {
+  display: flex;
+  /* justify-content: center; */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.elementor-widget-container1,
+.elementor-widget-container2,
+.elementor-widget-container3 {
+  display: flex;
+  justify-content: space-around; /* Add space around the images */
+  margin-top: 20px; /* Add margin to the top of the image containers */
+  gap: 1rem;
+}
+
+.elementor-widget-container1 img,
+.elementor-widget-container2 img,
+.elementor-widget-container3 img {
+  margin: 0 -35px; /* Add margin to the left and right of the images */
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Add border radius to the images */
+}
+
+.sliderimages {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+}
+
+.slides {
+  flex: 0 0 auto;
+  /* width: 20%; */
+  transition: transform 0.5s;
+}
+
+.brand-name {
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+.leftside-btn Button {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .brand-main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .brand-name {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .leftside-btn Button {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 990px) {
+  .brand-main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .brand-name {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .leftside-btn Button {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .elementor-widget-container1 img,
+  .elementor-widget-container2 img,
+  .elementor-widget-container3 img {
+    margin: 0 -20px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .testimonial_container {
+    margin-bottom: -5rem;
+  }
+}

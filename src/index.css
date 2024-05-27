@@ -1,0 +1,218 @@
+
+/* @import url("http://fonts.cdnfonts.com/css/galano-grotesque-alt"); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700;900&display=swap');
+
+:root{
+  --main-bg-color: #171F3A;
+  --primary-black-color: hsl(260, 11%, 11%);
+  --secondary-black-color: #4d4d4d;
+  --orange-color: #ee741f;
+  --red-color: #ee1f45;
+  --second-red-color: #e62323;
+  --green-color: #008000;
+  --white-color: #fff;
+  --back-color: #000;
+  --light-black-color: #3a3a3a;
+  --light-gray-color: #F2F2F2;
+  --light-blue-color: #0d6efd;
+  --gray-color:#808080;
+  --secondary-gray-color: #dddddd;
+  --border-color: #ced4da;
+  --btn-hover-color: #483d8b;
+  --success-green-color: "#57cd58";
+
+  --grid-color: #F2F2F2;
+  --main-bg-color: #171F3A;
+  --topHeader-bg-color:  #fff;
+  --text-color : #000;
+  --mainContent-bg-color:#fff;
+  --button-bg-color: #171F3A;
+  --button-color:#fff;
+  --product-text-color:rgba(0, 0, 0, 0.6);
+  --table-bg-color:#fff;
+  --persent-button-bg: #171F3A;
+  --persent-button:#fff;
+  --toggle-button-bg: #171F3A;
+  --cart-bg-color:#fff;
+  --checkbox-color:var(--main-bg-color);
+  --online-or-button:var(--light-gray-color);
+  --black-white:#171F3A;
+  --step-bg-color:#9E9E9E;
+  --step-text:var(--white-color)
+}
+
+[data-theme="dark"]{
+  --button-bg-color:#fff;
+  --button-color:#171F3A ;
+  /* --main-bg-color:rgb(27, 25, 25); */
+  --light-blue-color:#fff;
+  --grid-color: #2b2626;
+  --main-bg-color:#333333;
+  --topHeader-bg-color: #333333;
+  --text-color:#fff;
+  --product-text-color:#fff;
+  --mainContent-bg-color: #2b2727;
+  --table-bg-color:#302e2e;
+  --persent-button-bg:#fff;  
+  --persent-button:#3d3737;
+  --toggle-button-bg: #7B7B7B;
+  --cart-bg-color:#423e3e;
+  --checkbox-color:var(--white-color);
+  --online-or-button:#443a3a;
+  --black-white:#fff;
+  --step-bg-color:rgb(128, 121, 121);
+  --step-text:var(--back-color);
+  --gray-color:#fff;
+  /* --white-color: #292929; */
+}
+
+.box-shadow{
+  box-shadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 2px 6px
+}
+
+.border-radious-5px{
+border-radius: 5px;
+}
+
+.light-black-color{
+  color: var(--text-color);
+}
+
+.black-color{
+  color: var(--primary-black-color);
+}
+
+/* border under table removed using this code */
+tbody, td, tfoot, th, thead, tr{
+  border-style: none;
+}
+
+.text-orange-color {
+  color: var(--orange-color);
+}
+
+
+.font-size-11{
+  font-size: 11px;
+}
+
+  /* Text Syling*/
+  .text-heading {
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 500;
+    color: var(--text-color);
+  }
+  
+  .text-Color{
+    color: var(--text-color);
+  }
+
+  .table > :not(:last-child) > :last-child > * {
+    border-bottom-color: var(--border-color);
+}
+
+  .text-des {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .text-label{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: var(--secondary-black-color);
+  }
+
+  .table-label{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: var(--primary-black-color);
+  }
+  
+  /* All table card */
+  .card{
+    border-radius: 10px !important;
+    background-color: var(--topHeader-bg-color);
+  }
+
+  /* all table heading  */
+  .table>:not(caption)>*>*{
+    background-color: var(--table-bg-color) !important;
+   
+    color: var(--text-color);
+  }
+/*  maui toggle class */
+  .css-1yjjitx-MuiSwitch-track{
+    /* color: var(--text-color) !important; */
+    background-color:var(--text-color) !important;
+  }
+ 
+/* class for off toggle button color */
+  .css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase{
+    color: lightgray !important ; 
+  }
+
+  /* class for oN toggle button color  */
+  .css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked {
+    color:var(--text-color)!important;
+  } 
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Galano Grotesque", sans-serif; */
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  background: var(--light-gray-color);
+}
+
+/* tax model */
+.btn-primary:disabled{
+  background-color: var(--secondary-black-color) !important;
+  border: none !important;
+}
+
+.dropzone {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  border: 3px dashed var(--secondary-gray-color);
+  background-color: var(--light-gray-color);
+  color: var(--secondary-gray-color);
+  width: 100%;
+}
+
+.cardBox {
+  box-shadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px,
+    rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+  border-radius: 10px;
+  background-color: var(--topHeader-bg-color);
+  color: var(--text-color);
+}
+
+/* class for all popuop Modal */
+.popup-modal{
+  color: var(--text-color);
+  background-color: var(--topHeader-bg-color);
+}
+
+.btn-close{
+  background-color: var(--white-color) !important;
+}
+.table>thead {
+  background-color: var(--white-color) !important;
+}

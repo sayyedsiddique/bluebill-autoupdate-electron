@@ -1,0 +1,124 @@
+/* css for table product list */
+.prodlist-container {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.prodlist-container td img {
+  cursor: pointer;
+}
+
+.togl {
+  width: 10rem;
+}
+
+.action-btn-DE {
+  display: flex;
+  justify-content: center;
+}
+
+/* css for Add new product btn */
+.ANP-btn:active {
+  background-color: var(--white-color) !important;
+  color: var(--main-bg-color) !important;
+  border: 1px solid var(--main-bg-color) !important;
+}
+
+/* css for Upload bulk btn */
+.UB-btn:active {
+  background-color: var(--main-bg-color) !important;
+  color: var(--white-color) !important;
+  border: 1px solid var(--main-bg-color) !important;
+}
+
+.productPage-btn {
+  gap: 5px;
+  align-items: center;
+}
+
+.buttonDiv {
+  display: flex;
+}
+
+.Select-categoryList {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  /* width: 400px; */
+  justify-content: flex-end;
+}
+
+.message-container {
+  text-align: center;
+  margin-top: 155px;
+  /* color: #555;  */
+}
+
+/* for dashboard reload button */
+.relaod-btn {
+  text-align: right;
+}
+
+/* pagination buttons */
+.css-wjh20t-MuiPagination-ul li button {
+  color: var(--text-color);
+}
+.MuiButtonBase-root.MuiPaginationItem-root.MuiPaginationItem-sizeMedium.MuiPaginationItem-text.MuiPaginationItem-circular.Mui-selected.MuiPaginationItem-page.css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root {
+  background-color: var(--button-bg-color);
+  color: var(--button-color);
+}
+
+/********************** Media Query start **************************/
+
+/* media query for laptop & tablet screen start*/
+
+@media screen and (max-width: 1040px) {
+  .dnone {
+    display: none;
+  }
+
+  .buttonDiv {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .productPage-btn button {
+    font-size: 11px;
+    align-items: center;
+  }
+
+  .productPage-btn {
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+/* media query for laptop & tablet screen end*/
+
+/* media query for mobile screen start*/
+@media screen and (max-width: 425px) {
+  .product-expiry-select {
+    width: 100%;
+  }
+  .selelect-product-byCategory {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 380px) {
+  .UB-btn {
+    margin-bottom: 10px;
+  }
+
+  .card-fs {
+    font-size: 10px;
+  }
+}
+
+/* media query for mobile screen end*/
+
+/********************** Media Query end **************************/

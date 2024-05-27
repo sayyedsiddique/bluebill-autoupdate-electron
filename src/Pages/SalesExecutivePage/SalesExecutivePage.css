@@ -1,0 +1,44 @@
+
+/* css for setOnDuty btn */
+.set-btn {
+  background-color: var(--main-bg-color) !important;
+  color: var(--white-color) !important;
+  font-size: 14px;
+  border: 2px solid var(--main-bg-color) !important;
+  border-radius: 5px;
+}
+
+/* css for SE toggle btn */
+.SE-toggle:checked {
+  align-items: center !important;
+  background-color: var(--toggle-button-bg) !important;
+  color: var(--white-color) !important;
+  border: 1px solid var(--main-bg-color) !important;
+  margin-top: 9px;
+  margin-bottom: 9px;
+}
+
+/* css for SE model toggle btn */
+.SE-toggleModal:checked{
+  align-items: center !important;
+  background-color: var(--toggle-button-bg) !important;
+  color: var(--white-color) !important;
+  border: 1px solid var(--main-bg-color) !important;
+}
+.Name-cursor {
+  cursor: pointer;
+}
+
+/* media query for mobile screen start*/
+
+@media screen and (max-width: 425px) {
+  .set-btn{
+    width: max-content;
+    margin-left: 0px !important;
+  }
+    
+  }
+
+/* media query for mobile screen end*/
+
+  

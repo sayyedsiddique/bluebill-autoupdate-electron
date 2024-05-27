@@ -1,0 +1,7 @@
+@media screen and (max-width: 380px) {
+    .card-order {
+        flex-wrap: wrap;
+        width: 100%;
+    }    
+}
+

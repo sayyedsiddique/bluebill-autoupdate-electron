@@ -1,0 +1,74 @@
+.small-invoice-container {
+  display: flex;
+  /* background-color: red; */
+  /* border: 1px solid #d6d5d5; */
+  border: none;
+}
+
+.small-invoice-container p {
+  margin-bottom: 0 !important;
+}
+
+.invoice-name-heading {
+  padding-top: 10px;
+  font-size: 1.2rem !important;
+}
+
+.customer-name {
+  font-size: 1.3rem !important;
+  font-weight: 600;
+}
+
+.thermal-thead {
+  border-color: inherit;
+  border-style: solid;
+  border-width: 0px;
+  border-bottom: 1px solid;
+}
+
+.thermal-thead tr {
+  margin-bottom: 10px;
+}
+
+.thankyou-container h5 {
+  margin-bottom: 0 !important;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.thankyou-container p {
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+.thankyou-container h5 {
+  text-align: center;
+}
+
+.small-invoice-container h1 {
+  margin-bottom: 0 !important;
+}
+
+.total-amount-container h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.date-and-time-container p {
+  font-weight: 600;
+}
+
+.termal-customerName p {
+  font-weight: 600;
+}
+
+.thermal-address p {
+  font-weight: 600;
+  text-align: left;
+  margin-left: 0.25rem;
+}
+
+.thermal-details {
+  font-weight: 500;
+  align-items: start;
+}

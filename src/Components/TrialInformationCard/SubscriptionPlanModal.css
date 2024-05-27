@@ -1,0 +1,122 @@
+
+.pricing-box .plan {
+  font-size: 3rem;
+}
+
+.pricing-badge {
+  position: absolute;
+  top: 0;
+  z-index: 999;
+  right: 0;
+  width: 100%;
+  display: block;
+  font-size: 15px;
+  padding: 0;
+  overflow: hidden;
+  height: 100px;
+}
+
+.pricing-badge .badge {
+  float: right;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  right: -67px;
+  top: 17px;
+  position: relative;
+  text-align: center;
+  width: 200px;
+  font-size: 13px;
+  margin: 0;
+  padding: 7px 10px;
+  font-weight: 500;
+  color: #ffffff;
+  background: #fb7179;
+}
+.mb-2, .my-2 {
+    margin-bottom: .5rem!important;
+}
+
+.plan-container{
+  /* max-width: 1400px; */
+}
+.charges-price{
+  font-weight: 550;
+}
+.heading-title{
+  font-weight: 650;
+}
+.discount-amount{
+  font-size: 1.5rem;
+}
+
+.plan-container {
+  padding: 20px; 
+}
+
+.title-box {
+  /* margin-bottom: 20px; */
+}
+.subscription-content{
+font-size: 0.9rem;
+font-weight: 450;
+}
+
+.pricing-container {
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center;
+}
+
+.pricing-box {
+  margin: 10px; 
+  -webkit-box-shadow: 0px 5px 30px -10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 5px 30px -10px rgba(0, 0, 0, 0.1);
+  padding: 35px 20px;
+  border-radius: 10px;
+  position: relative;
+  background-color: #ffffff;
+  border: 1px solid #00000021;
+  width: 400px;
+}
+.subscription-cart-container {
+  gap: 2rem;
+}
+
+@media (max-width: 879px) {
+  .pricing-box {
+    width: calc(45% - 20px); 
+  }
+}
+
+@media (max-width: 768px) {
+  .pricing-box {
+    width: calc(100% - 20px); 
+  }
+  .subscription-card-title {
+    font-size: 2rem;
+  }
+  .subscription-cart-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .discount-amount{
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .pricing-box {
+    width: calc(100% - 20px); 
+  }
+}
+@media (max-width: 425px) {
+  .subscription-card-title {
+    font-size: 2rem;
+  }
+  .discount-amount{
+    font-size: 1.5rem;
+  }
+}
+
+
+

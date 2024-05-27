@@ -1,0 +1,35 @@
+.spinner-border{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -25px;
+    width: 4rem;
+    height: 4rem;
+    border: .35em solid #156EB4;
+    border-right-color: transparent;
+}
+
+.spinner-border-small{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -25px;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: .35em solid #156EB4;
+    border-right-color: transparent;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 1.5s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

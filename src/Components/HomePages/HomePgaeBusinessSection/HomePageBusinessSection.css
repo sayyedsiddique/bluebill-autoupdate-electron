@@ -1,0 +1,74 @@
+/* Add this CSS to your existing stylesheet */
+.busniess-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.business-actions {
+  display: flex;
+  align-items: center;
+}
+
+.business-img {
+  margin-left: 20px; /* Adjust as needed */
+}
+
+.business-heading {
+  display: flex;
+  flex-direction: column;
+}
+.business-heading h2 {
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+  font-weight: 800;
+  font-size: 50px;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.42);
+}
+
+.business-conatiner {
+  background-color: #6B6ECC;
+  background: linear-gradient(45deg, #04051dea 0%, #2b566e 100%);
+  padding: 50px 20px;
+}
+
+.start-btn Button {
+  color: var(--button-bg-color);
+  background-color: var(--button-color);
+  border-radius: 2rem;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .business-heading h2 {
+    font-size: 1.5rem;
+  }
+
+  .busniess-content {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .business-img img {
+    height: 250px;
+    width: 250px;
+  }
+
+  .start-btn Button {
+    margin: 1rem 7rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .start-btn Button {
+    margin: 1rem 6rem;
+  }
+}

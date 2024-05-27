@@ -1,0 +1,20 @@
+.tcolor{
+    color: rgb(2, 173, 2) !important;
+}
+.tcolor-msg{
+    color: rgb(236, 11, 48) !important;
+}
+.tgl-btn{
+    background-color: var(--toggle-button-bg) !important;
+    border-color: var(--toggle-button-bg) !important;
+}
+
+.form-switch{
+    padding-left: 0em !important;
+}
+.form-check{
+    padding-left: 0em !important;
+}
+.form-switch .form-check-input{
+    margin-left: -0.5em !important;
+}

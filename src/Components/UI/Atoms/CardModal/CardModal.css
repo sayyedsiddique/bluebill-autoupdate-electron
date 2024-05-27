@@ -1,0 +1,15 @@
+.card_modal_container{
+    position: relative;
+    top: 20px;
+    min-height: 100%;
+    background: #fff;
+    transition: 0.5s;
+    padding: 1.5rem;
+    font-family: 'Galano Grotesque', sans-serif;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

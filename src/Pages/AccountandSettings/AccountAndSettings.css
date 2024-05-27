@@ -1,0 +1,100 @@
+.InvoiceSettingFormMainContainer {
+  height: 100%;
+}
+
+/* .mainIncoiceSettingContainer{
+    display: flex;
+    justify-content: space-between;
+} */
+
+.InvocieSettingButton button {
+  padding: 10px 50px;
+  padding-left: 10px;
+}
+
+.InvoiceFromContainer {
+  /* width: 100%; */
+  padding: 20px;
+  height: 100%;
+}
+
+.InvoiceFormMainContainer {
+  display: flex;
+  gap: 5%;
+  height: 100%;
+}
+
+.InvoiceForm {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 30%;
+}
+
+.accountMenuItemsContainer{
+    border: 1px solid var(--main-bg-color);
+    height: fit-content;
+}
+
+.accountMenuItemsContainer ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+
+}
+
+.accountMenuItems {
+  padding: 10px 15px;
+  color: var(--main-bg-color);
+  cursor: pointer;
+  border-bottom: 1px solid var(--main-bg-color);
+}
+
+.accountMenuItems.active {
+    padding: 10px 15px;
+    color: var(--white-color);
+    cursor: pointer;
+    /* border-bottom: 1px solid var(--main-bg-color); */
+    background-color: var(--main-bg-color);
+  }
+
+.accountMenuItems:last-child{
+    border-bottom: none;
+}
+
+/* .InvoiceModal{
+    height: 100%;
+} */
+/* .modal-content {
+    width: 700px;
+} */
+
+/* .custom-modal-style {
+    width: 897px !important;
+    height: 802px !important;
+} */
+
+/* 
+.setting-invoice-modal-container.modal-content {
+    height: 100% !important;
+} */
+
+/* .modal-content-custom {
+    max-width: 100% !important;
+} */
+
+/* .modal-content{
+    width: 50% !important;
+} */
+
+.modal-content.setting-invoice-modal-container {
+  border: none;
+}
+
+/* 
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 50%;
+        margin: 1.75rem auto;
+    }
+} */

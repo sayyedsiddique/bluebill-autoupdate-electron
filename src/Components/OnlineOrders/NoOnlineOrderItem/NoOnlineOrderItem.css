@@ -1,0 +1,35 @@
+/* No Order Screen */
+.no_Order {
+  position: relative;
+  top: 20px;
+  min-height: 100%;
+  background: var(--topHeader-bg-color);
+  transition: 0.5s;
+  padding: 1.5rem;
+  font-family: "Galano Grotesque", sans-serif;
+  /* border-radius: 10px; */
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.no_Order p {
+  margin-top: 10px;
+  color: #4d4d4d;
+}
+
+.no_Order .no_order_img {
+  width: 25%;
+  margin-bottom: 20px;
+}
+
+.no_Order .socialIcons {
+  display: flex;
+  flex-direction: row;
+}
+
+.no_Order .socialIcons img {
+  margin-right: 15px;
+}

@@ -1,0 +1,48 @@
+.free-trail-container {
+  background-color: var(--button-bg-color);
+  /* padding: 0 60px 0 40px; */
+  border-radius: 20px; /* Add border radius for card-like appearance */
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  padding: 30px;
+}
+
+.trail-plan_inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: white; /* Set text color to white */
+}
+
+.trail-heading-para {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.trial-heading-pera {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.trial-plan-btn-container {
+  margin-left: auto; /* Push the button to the right */
+}
+
+.trailPlan-btn Button {
+  color: var(--button-bg-color);
+  background-color: var(--button-color);
+  border-radius: 2rem;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+
+
+@media screen and (max-width: 768px) {
+    .free-trail-container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}

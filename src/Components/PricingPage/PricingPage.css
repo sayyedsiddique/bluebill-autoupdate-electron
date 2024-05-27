@@ -1,0 +1,115 @@
+.plan-info {
+  text-align: center;
+}
+
+/* .plan-pricing-box {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+} */
+.main-plan-section{
+  margin-top: 10rem;
+
+}
+.plan-pricing-box a {
+  display: inline-block;
+  padding: 12px 40px;
+  background-color: var(--button-bg-color); /* Set background color to black */
+  color: white; /* Set text color to white */
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  /* max-width: 200px; */
+  font-size: 18px;
+  margin-bottom: 2rem;
+}
+
+.row-title p {
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 4px 0 0;
+}
+
+.plan-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.plan-table td {
+  padding: 15px 10px;
+  border: 1px solid #ccc;
+  /* height: 300px; */
+  border-bottom: none;
+  border-right: none;
+}
+
+.plan-pricing-box {
+  text-align: center;
+}
+
+.plan-pricing {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.plan-title span sub {
+  font-size: 2.5rem;
+}
+.plan-price {
+  font-size: 2.5rem;
+}
+.plan-currency {
+  font-size: 2rem;
+}
+.plan-duration {
+  font-weight: bold;
+}
+.horizanta-line {
+  margin: 50px auto;
+  border: 2px solid var(--button-bg-color);
+  width: 200px;
+  background-color: var(--button-bg-color);
+}
+
+.charge {
+  font-size: 16px;
+  color: #888;
+  font-weight: bold;
+}
+.plan-info-section h5 h6 {
+  font-weight: 600;
+  font-size: 18px;
+}
+.table-hd {
+  font-weight: 600;
+  text-align: left;
+}
+.border-left td {
+  border-left: none;
+}
+
+.plan-title .span {
+  font-size: 20px;
+  color: red;
+  font-weight: bold;
+}
+.container-fluid {
+  padding: 0 5rem;
+}
+
+.second-container th[colspan="2"],
+.second-container td[colspan="2"] {
+  height: 60px;
+}
+
+.checkmark{
+  font-size: 24px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .container-fluid {
+    padding: 0 1rem;
+  }
+  
+}

@@ -1,0 +1,12 @@
+pipelines:
+  branches:
+    release/release-electron-app:
+      - step:
+          name: Build and Publish
+          script:
+            - npm install
+            - npm run build
+            - npx electron-builder --publish always
+          variables:
+            BITBUCKET_APP_PASSWORD: $BITBUCKET_APP_PASSWORD
+

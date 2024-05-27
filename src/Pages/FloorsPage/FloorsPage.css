@@ -1,0 +1,143 @@
+.floor-plan-conainer {
+  /* border: 1px solid; */
+  /* padding: 10px; */
+  box-shadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px,
+    rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+  /* height: 90%; */
+}
+
+.floor-plan-header {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-top: 10px;
+  /* padding-bottom: 10px; */
+  border-bottom: 1px solid;
+}
+
+.floor-plan-close,
+.table-list-container {
+  flex: 1;
+}
+
+.floor-plan-close h1 {
+  cursor: pointer;
+  font-size: 1.5rem;
+  width: 50px;
+  color: var(--text-color);
+}
+
+.floor-plan-header-title h1 {
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+.floor-plan-header-title,
+.floor-plan-main-container {
+  flex: 2;
+}
+
+.inner-floor-plan-containe {
+  height: 70vh;
+}
+
+.floor-plan-main-container {
+  overflow-x: scroll;
+  padding-left: 10px;
+}
+
+.table-list-container {
+  box-shadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px,
+    rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+  /* border-radius: 10px; */
+  background-color: var(--topHeader-bg-color);
+  color: var(--text-color);
+  padding: 10px;
+  overflow-y: scroll;
+}
+
+.table-card {
+  margin-bottom: 10px;
+}
+
+.table-card {
+  padding: 10px;
+  background-color: var(--button-bg-color);
+  color: var(--button-color);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.table-card-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.set-reset-btn {
+  padding: 0px 6px;
+  background: #04b504;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.reset-reset-btn {
+  padding: 0px 6px;
+  background: #dc3545;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.size-container {
+  padding: 20px 0;
+  gap: 20px;
+}
+
+.size {
+  width: 30%;
+}
+
+.floor-plan-main-area {
+  position: relative;
+  background-image: url("https://wallpaperset.com/w/full/a/f/f/371852.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1000px;
+  /* height: 77%; */
+  height: 84%;
+}
+
+.floor-plan-main-area .table-box {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  background-color: var(--main-bg-color);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: move;
+  border-radius: 2px;
+  padding: 5px;
+}
+
+.cube {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  width: 75px;
+  height: 75px;
+  margin: 4px;
+  background-color: var(--main-bg-color);
+  --color: #4af;
+  color: white;
+  line-height: 40px;
+  text-align: center;
+  cursor: move;
+  padding: 5px;
+}
+
+.cube .cube {
+  background: #ddd;
+  margin-left: 20px;
+}

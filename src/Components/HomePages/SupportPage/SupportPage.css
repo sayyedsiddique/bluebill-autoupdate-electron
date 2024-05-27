@@ -1,0 +1,276 @@
+.support-main-containt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  height: 950px;
+}
+
+.support-image {
+  flex: 1;
+  text-align: center;
+}
+.support-image img {
+  max-width: 100%;
+  height: auto;
+}
+.support-text {
+  width: 33%;
+  text-align: left;
+}
+
+.support-text h1 {
+  font-size: 5rem;
+  color: var(--button-bg-color);
+  font-weight: 600;
+}
+.support-text p {
+  font-size: 1.5rem;
+}
+
+.service-grid {
+  background-color: rgb(193 199 209 / 44%);
+}
+
+.service-title h2 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.service-title h4 {
+  position: relative;
+  display: inline-block;
+}
+.service-icon {
+  position: relative;
+}
+.service-title p {
+  /* padding: 0 190px; */
+  margin-bottom: 10px;
+  color: #6c757d !important;
+}
+
+.wtsapp-first h1 {
+  font-weight: 600;
+  color: var(--main-bg-color);
+}
+
+.wtsapp-first p {
+  color: #6c757d !important;
+}
+
+.service-wrap {
+  /* background-color: white; */
+  padding: 50px 15px;
+  position: relative;
+  border-radius: 5px; /* Add border radius for rounded corners */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: #6b6ecc;
+  background: linear-gradient(45deg, #04051dea 0%, #2b566e 100%);
+  /* box-shadow: 0 10px 15px -3px rgba(33, 150, 243, 0.4),
+    0 4px 6px -4px rgba(33, 150, 243, 0.4); */
+}
+
+.service-wrap:hover {
+  box-shadow: 0 8px 16px rgba(6, 11, 59, 0.55); /* shadow on hover */
+}
+
+.service-wrap p {
+  position: relative;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  /* color: #4d4d4d; */
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.service-wrap h4 {
+  margin-bottom: 17px;
+  font-size: 18px;
+  text-transform: capitalize;
+  position: relative;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+  /* color: #1a181e; */
+  color: white;
+  font-weight: 800;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.42);
+  margin: 20px 0 8px;
+  text-align: center;
+}
+
+.service-wrap a {
+  font-size: 14px;
+  font-weight: 600;
+  position: relative;
+}
+.support-icons {
+  height: 50px;
+  width: 50px;
+  color: white;
+}
+
+.support-text Button {
+  font-size: 1.5rem;
+}
+
+.email-form-group input[type="text"],
+.email-form-group input[type="email"],
+.email-form-group input[type="tel"],
+.email-form-group input[type="number"] {
+  height: 30px;
+  width: 100%;
+  padding: 15px;
+  background-color: #ffffff;
+}
+
+.email-form-group {
+  margin-bottom: 15px;
+}
+
+.email-support-section {
+  background-color: rgb(193 199 209 / 44%);
+}
+
+.email-submit-btn Button {
+  font-size: 1rem;
+}
+
+.wtsapp-support-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+}
+.wtsapp-btn Button {
+  font-size: 1rem;
+  border-radius: 2rem;
+  padding: 10px 25px;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .support-main-containt {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 5rem;
+  }
+
+  .supoort-image img {
+    width: 70%;
+  }
+  .support-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .support-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .support-text p {
+    font-size: 16px;
+  }
+  .support-text Button {
+    font-size: 1rem;
+  }
+
+  .service-title h2 {
+    font-size: 2.5rem;
+  }
+  .service-title p {
+    font-size: 16px;
+  }
+
+  .wtsapp-support-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .wtsapp-first {
+    text-align: center;
+  }
+
+  .suppoert-input.col-md-6 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  .wtsapp-first h1 {
+    font-size: 3rem;
+  }
+  .wtsapp-first p {
+    font-size: 16px;
+    margin: 20px 0px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .supoort-image img {
+    max-width: 90%;
+  }
+  .support-text {
+    width: 86%;
+    text-align: center;
+  }
+  .wtsapp-support-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .wtsapp-first {
+    text-align: center;
+  }
+  .wtsapp-first p {
+    margin: 20px 0px;
+  }
+  .service-grid{
+    margin-top: -10rem;
+
+  }
+}
+
+@media (max-width: 425px) {
+  .support-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .support-text p {
+    font-size: 17px;
+  }
+
+  .support-main-containt {
+    margin-bottom: -15rem;
+  }
+
+  .supoort-image img {
+    margin-top: -10rem;
+  }
+
+  .support-text Button {
+    font-size: 17px;
+  }
+
+  .service-title h2 {
+    font-size: 18px;
+  }
+
+  .wtsapp-first h1 {
+    font-size: 18px;
+  }
+  .wtsapp-btn Button {
+    font-size: 14px;
+  }
+
+  .email-submit-btn Button {
+    font-size: 14px;
+  }
+}

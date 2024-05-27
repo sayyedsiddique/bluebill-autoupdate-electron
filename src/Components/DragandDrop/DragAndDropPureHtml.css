@@ -1,0 +1,15 @@
+#fileInput{
+    display: none;
+}
+
+.dropzone.active {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    border: 3px dashed #a2a0a0;
+    background-color: var(--light-gray-color);
+    color: var(--secondary-gray-color);
+    width: 100%;
+  }

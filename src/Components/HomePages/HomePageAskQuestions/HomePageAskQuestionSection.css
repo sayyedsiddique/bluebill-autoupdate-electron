@@ -1,0 +1,77 @@
+.asked-question-container {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+  width: 100%;
+  /* margin-left: 15rem; */
+}
+
+.faq-container {
+ 
+  padding: 50px 0px;
+  margin-top: 1.5rem;
+}
+
+.asked-question-container h2 {
+  margin-bottom: 20px;
+}
+
+.asked-question-container h5 {
+  margin-bottom: 10px;
+  cursor: pointer;
+  /* text-decoration: underline; */
+}
+
+.asked-question-container p {
+  color: rgb(116, 112, 112);
+  /* width: 900px; */
+}
+
+.asked-question{
+  display: flex;
+  align-items: center;
+}
+
+.questions span {
+  margin-right: 10px;
+}
+
+.asked-question h6{
+  padding: 15px;
+  font-weight: 600;
+}
+
+
+.asked-question-container {
+  .asked-question {
+    transition: transform 0.3s ease; /* Smooth transition for transform property over 0.3 seconds */
+  }
+
+  p {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease; /* Smooth transitions for max-height and opacity over 0.3 seconds */
+  }
+}
+
+.asked-question.active {
+  transform: translateY(-10px); /* Move the question up a bit when active */
+}
+
+.asked-question.active + div p {
+  max-height: 1000px; /* Expand the answer to full height */
+  opacity: 1; /* Make the answer visible */
+}
+
+
+@media (max-width: 425px) {
+  .asked-question-container {
+
+    padding: 1rem 2rem;
+
+  }
+}
+
+
+

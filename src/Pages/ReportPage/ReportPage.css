@@ -1,0 +1,87 @@
+.month-selector {
+  display: flex;
+  flex-wrap: wrap;
+  width: 250px;
+  z-index: 1;
+}
+.report-datePicker {
+  display: flex;
+  flex-wrap: wrap;
+}
+.report-chart {
+  height: 500px;
+}
+.report-container {
+  margin: 0rem 1rem 2rem 1rem;
+}
+.total-footer {
+  font-size: 1.3rem;
+}
+
+/********************** Media Query start **************************/
+
+/* media query for mobile screen */
+@media screen and (max-width: 600px) {
+  .month-selector {
+    display: block;
+    width: 100%;
+  }
+  .reportDashboard {
+    display: block !important;
+  }
+  .customDate-container {
+    display: block !important;
+  }
+  .report-datePicker {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .datePicker-input {
+    width: 150px;
+  }
+  .datePicker-btn button {
+    /* display: flex; */
+    width: 100%;
+    margin: 0;
+  }
+  .printerPDF-btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5;
+  }
+  .report-chart {
+    height: 250px;
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .report-datePicker {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .datePicker-btn Button {
+    width: 100%;
+    margin: 0;
+  }
+  .report-chart {
+    height: 250px;
+    width: 315px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .report-chart {
+    width: 265px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .report-chart {
+    height: 250px;
+    width: 230px;
+  }
+}
+
+/********************** Media Query end **************************/

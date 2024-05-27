@@ -1,0 +1,48 @@
+.cardSlider-item {
+  /* width: 439px; */
+  margin-right: 1rem;
+  margin-bottom: 3rem;
+  border: 1px solid #ddd;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.feedback_item {
+  display: flex;
+  flex-direction: column;
+}
+
+.feed_back_author {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.media {
+  display: flex;
+  align-items: center;
+}
+
+.img {
+  margin-right: 10px;
+}
+
+.img img {
+  max-width: 88px; /* Adjust as needed */
+  max-height: 88px; /* Adjust as needed */
+}
+
+.ratting {
+  margin-left: auto;
+}
+
+.ratting a {
+  color: #f2b01e; /* Yellow color for stars */
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+p {
+  margin: 0;
+}

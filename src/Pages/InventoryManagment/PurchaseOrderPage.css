@@ -1,0 +1,48 @@
+.purchase-order {
+  display: flex;
+  justify-content: space-between;
+}
+
+.purchaseFormMainContainer {
+  display: flex;
+  justify-content: space-between;
+  /* height: 100%; */
+  margin-bottom: 20px;
+}
+
+
+.purchaseFromContainer {
+  width: 60%;
+  padding: 20px;
+  height: 75%;
+
+}
+
+/* .purchaseOrder {
+  margin: 0% -80%;
+  padding: 40px 20px;
+} */
+
+.discount-type {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+  /* padding-right: 70%; */
+}
+
+.discount-value-field {
+  width: 20%;
+}
+.footer-btn-modal{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -15px;
+
+}
+.order-page-modal{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}

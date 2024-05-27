@@ -1,0 +1,72 @@
+.home-headingmain-container {
+  margin-top: 20rem;
+  margin-bottom: 15rem;
+}
+.home-pageContaniner {
+  text-align: center;
+}
+
+.home-heading-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+.home-heading-content {
+  font-family: "Roboto", Sans-serif;
+  font-style: bold;
+}
+
+.home-headingdescription-content p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.home-headingbuttom-section {
+  margin-top: 20px;
+  text-align: center;
+}
+.getstartbtn Button{
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .home-heading-content h1 {
+    font-size: 2rem;
+  }
+
+  .home-headingdescription-content p {
+    font-size: 1rem;
+  }
+
+  .home-headingbuttom-section img {
+    width: 650px;
+  }
+  .home-headingmain-container {
+    margin-top: 12rem;
+    margin-bottom: 5rem;
+  }
+  .getstartbtn Button{
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 990px) {
+  .home-headingbuttom-section img {
+    width: 550px;
+  }
+}
+@media (max-width: 600px) {
+  .home-headingbuttom-section img {
+    width: 300px;
+  }
+}
+
+@media (max-width: 425px) {
+
+  .home-heading-content h1 {
+    font-size: 1.2rem;
+  }
+  .getstartbtn Button{
+    font-size: 0.8rem;
+  }
+}

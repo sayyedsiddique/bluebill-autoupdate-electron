@@ -1,0 +1,283 @@
+/* main container */
+.fup-login-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--secondary-gray-color);
+  height: 100vh;
+}
+
+.register-width {
+  width: "auto";
+}
+
+/* login page code wraped up in this class*/
+.fup-login-wrapper {
+  padding: 20px;
+  background-color: var(--light-gray-color);
+  border-radius: 25px;
+  width: 30%;
+  border: 1px solid var(--bbBorder);
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.fup-login-head {
+  color: var(--main-bg-color) !important;
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+.fup-login-changer {
+  color: var(--main-bg-color);
+  text-decoration: none;
+  cursor: pointer;
+  width: fit-content;
+}
+.fup-login-show-hide-pass {
+  color: var(--main-bg-color);
+  cursor: pointer;
+  width: fit-content;
+}
+.fup-login-btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.button {
+  background-color: var(--main-bg-color);
+  border: none;
+  color: var(--white-color);
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.login-btn{
+  background: var(--main-bg-color);
+    color: var(--main-bg-color);
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+/* for text field input */
+.input[type="text"] {
+  height: 45px;
+  width: 100%;
+  color: var(--back-color);
+  background: var(--white-color);
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+/* for password */
+.input[type="password"] {
+  height: 45px;
+  width: 100%;
+  color: var(--back-color);
+  background: var(--white-color);
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.react-tel-input input[type="text"],
+.react-tel-input input[type="tel"] {
+  position: relative;
+  z-index: 0;
+  margin-top: 0 !important;
+  outline: 1px solid var(--gray-color);
+  margin-bottom: 0 !important;
+  height: 45;
+  color: var(--back-color);
+  border-radius: 5px;
+  font-size: 17px;
+  border: 1px solid var(--gray-color);
+  margin-bottom: 10px;
+}
+
+.fup-fp-bottom-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+.fup-fp-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* file upload  */
+.fup-upload-section {
+  display: flex;
+}
+.fup-upload-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: var(--bblpPink);
+  margin-top: 80px;
+  height: auto;
+  padding: 20px;
+}
+.fup-upload-row .fup-upload-row-col-1 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.fup-upload-row .fup-upload-row-col-2 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  align-items: flex-start;
+}
+.fup-upload-row-col-2-head {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 20px;
+  color: var(--main-bg-color);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.fup-upload-row-col-2-ul {
+  height: 100px;
+  line-height: 20px;
+}
+.fup-upload-row-col-2-indicator {
+  text-align: center;
+}
+
+
+/**************************** Register form **************************/
+
+.input-field {
+  width: 100%;
+  outline: 1px solid var(--gray-color);
+  color: var(--back-color);
+  background: var(--white-color);
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid var(--gray-color);
+}
+
+.eye-containter{
+  top: 2.2rem;
+  right: 10px;
+}
+
+.eye-btn{
+  border: none;
+  background-color: transparent;
+}
+
+.register {
+  color: var(--light-blue-color);
+  text-decoration: underline;
+}
+
+.colors {
+  text-decoration: underline;
+  color: var(--light-blue-color);
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+/* for uploade screen */
+
+.fillingBox {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  background: var(--green-color);
+  background: linear-gradient(to left, green 50%, red 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  border-radius: 15px;
+  transition: all 1s ease;
+}
+.fillingBox p {
+  margin: 8px auto;
+  font-size: 1.5rem;
+  text-decoration: none;
+  outline: none;
+  outline-style: none;
+  color: var(--white-color);
+}
+.fillingBox:hover {
+  background-position: left bottom;
+}
+#center {
+  display: inline-block;
+}
+
+
+/********************** Media Query start **************************/
+
+/* media query for tablet & laptop screen */
+
+@media screen and (max-width: 950px) {
+  .fup-login-wrapper{
+    width: 60%;
+  }
+
+  .fup-login-head{
+    font-size: 20px;
+  }
+
+  .login-img-container img {
+    width: 45%;
+  }
+}
+
+
+/* media query for mobile screen */
+
+@media only screen and (max-width: 600px) {
+  .fup-login-wrapper{
+    width: 85%;
+  }
+
+  .fup-login-head{
+    font-size: 20px;
+  }
+
+  .login-img-container{
+    margin-bottom: 20px;
+  }
+
+  .login-img-container img {
+    width: 45%;
+  }
+
+  .fup-login-btn-container{
+    flex-wrap: wrap;
+  }
+
+  .links-btn{
+        cursor: pointer;
+        height: 10px;
+  }
+}
+
+/********************** Media Query end **************************/

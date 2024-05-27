@@ -1,0 +1,6 @@
+.list-group-item:hover {
+background-color:  var(--main-bg-color);
+cursor: pointer;
+color: white;
+
+}

@@ -1,0 +1,67 @@
+.btnclass:hover {
+  color: var(--btn-hover-color);
+  /* color: var(--text-color); */
+}
+
+.action-btn button {
+  color: var(--text-color);
+}
+
+.btnclass1:hover {
+  color: var(--btn-hover-color);
+}
+
+.error-fs {
+  font-size: 14px;
+}
+
+.placeholder-fs {
+  font-size: 13px;
+}
+
+/* for mandatory feilds */
+.requiredstar::after {
+  content: " *";
+  color: var(--red-color);
+}
+
+.customerDetails-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0px;
+  gap: 10px;
+}
+
+.customer-content-Details-card {
+  width: 30%;
+}
+.customer-card-content {
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center;
+}
+.customer-card-content p {
+  font-size: 1.2rem;
+}
+
+/* media query for tablet screen start*/
+
+@media screen and (max-width: 820px) {
+  .dnon {
+    display: none;
+  }
+}
+
+/* media query for tablet screen end*/
+@media screen and (max-width: 768px) {
+  .customer-card-content p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .customer-content-Details-card {
+    width: 100%;
+  }
+}

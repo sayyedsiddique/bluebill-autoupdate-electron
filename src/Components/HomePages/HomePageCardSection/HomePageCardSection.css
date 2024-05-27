@@ -1,0 +1,64 @@
+/* .feature_banner_box{
+    height: 600px;
+    border-radius: 8rem 0rem 8rem 0rem;
+    border:  2px solid var(--button-bg-color);;
+} */
+
+.card-heading_h2 {
+  font-size: 3rem;
+}
+
+.heading_para {
+  font-size: 2rem;
+}
+
+.heading-main {
+  font-size: 4rem;
+}
+.sp span {
+  color: white;
+}
+
+/* HomePageCardSection.css */
+.feature_banner_box {
+  position: relative;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  /* border-color: var(--button-bg-color); */
+  background-color: #6b6ecc;
+  background: linear-gradient(45deg, #04051dea 0%, #2b566e 100%);
+  box-shadow: 0 10px 15px -3px rgba(33, 150, 243, 0.4),
+    0 4px 6px -4px rgba(33, 150, 243, 0.4);
+
+  /* transition for smooth shadow change */
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.feature_banner_box:hover {
+  box-shadow: 0 8px 16px rgba(6, 11, 59, 0.55); /* shadow on hover */
+}
+
+.cards-icon {
+  height: 60px;
+  width: 60px;
+  color: white;
+}
+
+.feature_banner_box p {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 768px) {
+  .card-heading_h2 {
+    font-size: 1.5rem;
+  }
+
+  .heading_para {
+    font-size: 1.5rem;
+  }
+  .heading-main {
+    font-size: 2rem;
+  }
+}

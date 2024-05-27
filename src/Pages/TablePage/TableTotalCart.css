@@ -1,0 +1,138 @@
+.table-subtotal {
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+}
+
+.table-subtotal span {
+  width: 33%;
+}
+
+.table-total-Cart {
+  position: absolute;
+  bottom: 0;
+  width: 94%;
+  border-top: 1px solid var(--border-white-color);
+  padding-bottom: 10px;
+  color: white;
+}
+
+/* .Table-subtotal-complete-btn {
+    height: 0%;
+} */
+
+.Table-subtotal-btn button {
+  width: 300px;
+  margin-right: 10px;
+  border: none;
+}
+
+/* .Table-subtotal-secondry-btn {
+    height: 0%;
+} */
+
+.Table-subtotal-btn {
+  margin-top: 35px;
+  display: flex;
+}
+
+.table-total-Cart:before {
+  content: "";
+  position: absolute;
+  top: -38px;
+  left: 0;
+  right: 0;
+  height: 10px;
+  /* background: rgba(0, 0, 0, 0.8); */
+  box-shadow: 0 -10px 7px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 1262px) {
+  .table-total-Cart:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    height: 10px;
+    /* background: rgba(0, 0, 0, 0.8); */
+    box-shadow: 0 -10px 7px rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media screen and (max-width: 1210px) {
+
+  .table-right-cartBody {
+    height: auto;
+    overflow-y: scroll;
+    max-height: 10rem;
+  }
+
+  .table-total-Cart {
+    width: 100%;
+    position: static;
+    margin-top: 1rem;
+  }
+
+}
+
+
+@media screen and (max-width: 768px) {
+  .table-total-Cart {
+    width: 100%;
+    position: static;
+    margin-top: 1rem;
+  }
+
+
+  .table-right-cartBody {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .table-total-Cart {
+    width: 100%;
+    position: static;
+    margin-top: 1rem;
+  }
+
+  .table-right-cartBody {
+    height: auto;
+  }
+
+
+  .Table-subtotal-btn {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .Table-subtotal-btn button {
+    width: 100%;
+    margin-right: 10px;
+    border: none;
+    margin: 5px 0px;
+    font-size: 15px;
+  }
+}
+/* 
+@media screen and (max-width: 375px) {
+
+  .Table-subtotal-btn {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .Table-subtotal-btn button {
+    width: 100%;
+    margin-right: 10px;
+    border: none;
+    margin: 5px 0px;
+  }
+  
+} */
+

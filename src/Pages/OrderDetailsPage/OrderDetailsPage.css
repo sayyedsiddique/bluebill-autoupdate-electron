@@ -1,0 +1,213 @@
+/* main container */
+.orderDetails-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.orderDetails{
+  align-items: center;
+}
+
+/* css for order details page dashboard text highlight */
+.text-color{
+  color: var(--light-blue-color);
+}
+
+hr{
+  color: var(--gray-color);
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.orderDetails-container::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.orderDetails-container {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.card-shadow {
+  border: 1px var(--main-bg-color);
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.text-trim {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  cursor: pointer;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient:vertical;
+}
+
+.ODP-btn:active{     
+  background-color: var(--white-color);
+  color: var(--main-bg-color); 
+  border: 1px solid var(--main-bg-color);   
+}
+
+/* left side section */
+.order-info {
+  width: 60%;
+  padding: 20px;
+}
+
+.order-status {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.item {
+  display: flex;
+  justify-content: space-between;
+}
+.logo-label {
+  display: flex;
+}
+
+/* right side section */
+.side-section {
+  width: 35%;
+}
+
+.ODP-btn {
+  background-color: var(--main-bg-color);
+  color: var(--white-color);
+  border-radius: 5px;
+  border: none;
+}
+
+.font-bold {
+  font-weight: 600;
+}
+
+.card-text{
+  font-weight: 500;
+}
+.card-text span{
+  color: var(--light-blue-color);
+}
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/********************** Media Query start **************************/
+
+/* media query for full screen */
+@media screen and (max-width: 2560px){
+  .orderDetails{
+    display: flex;
+    justify-content: space-between;
+    flex: auto;
+  }
+  .prodImg{
+    height: 90px;
+    width: 90px;
+  }
+}
+
+/* media query for laptop & tablet screen */
+
+@media screen and (max-width: 1024px) {
+  .order-info {
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 1rem;
+  }
+  .side-section {
+    width: 100%;
+  }
+  .side-section input{
+    width: 100%;
+    font-size: 14px;
+  }
+  .notes-card {
+    width: 100%;
+  }
+  .header {
+    justify-content: space-between;
+  }
+  .customer_details {
+    width: 100%;
+    font-size: 14px;
+  }
+  .customer_detail h3, h4, h5{
+    font-size: 16px;   
+  }
+  .orderDetails-container {
+    padding: 2px;
+    display: flex;
+    flex-wrap: wrap
+  }
+  .text-trim {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    cursor: pointer;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient:vertical;
+  }
+  .externalClass {
+    font-size: 12px;
+  }
+  .secondary_btn .css-sghohy-MuiButtonBase-root-MuiButton-root {
+    font-size: 12px;
+    padding: 0rem;
+  }  
+}
+
+/* media query for mobile screen */
+
+@media screen and (max-width: 600px) {
+  .order-info p, h4, h5, h2, h6, h3 {
+    font-size: 14px;
+  }
+  .ODP-btn{
+    font-size: 14px;
+  }
+  .side-section {
+    width: 100%;
+  }
+  .notes-card {
+    width: 100%;
+  }
+  .customer_details {
+    width: 100%;
+  }
+  .orderDetails-container {
+    padding: 2px;
+  }
+  
+.text-trim {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
+  
+}
+.orderDetails{
+  display: inline-block;
+}
+}
+
+@media screen and (max-width: 320px) {
+  .header {
+    display: block;  
+    width: 100%;
+  }
+  .externalClass {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .secondary_btn {
+    width: 100%;
+  }  
+}
+
+/********************** Media Query end **************************/
