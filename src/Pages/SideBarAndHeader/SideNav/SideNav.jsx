@@ -38,9 +38,12 @@ import {
 } from "../../../utils/constantFunctions";
 import useLicenseValidation from "../../../hooks/useLicenseValidation";
 import { getPaymentDetails } from "../../../Redux/SubscriptionPaymentSlice/SubscriptionPaymentSlice";
+import UpdateDownloadModal from "../../../Components/Modals/UpdateDownloadModal";
 
 const SideNav = (props) => {
   const deleteAllSqliteDataApi = window.deleteAllDataApi;
+  const appUpdate = window.appUpdate;
+
   const { defaultLang, selectHandler, isLogoutOnly } = props;
   const location = useLocation();
   const navigate = useNavigate();
@@ -69,6 +72,13 @@ const SideNav = (props) => {
   const [isRestaurant, setIsRestaurant] = useState(false);
   const [cognitoUserId, setCognitoUserId] = useState();
   console.log("cognitoUserId... ", cognitoUserId);
+  const [showUpdateDownloadMD, setShowUpdateDownloadMD] = useState(false);
+  const [availableUpdateMsg, setAvailableUpdateMsg] = useState({
+    message: "",
+    version: "",
+    downloadProgress: 0,
+  });
+  console.log("availableUpdateMsg... ", availableUpdateMsg);
 
   const restaurantCollapseHandler = () => {
     sidenavToggleState === true
@@ -106,6 +116,17 @@ const SideNav = (props) => {
     restaurantsCollapse === true && setRestaurantsCollapse(false);
     inventoryCollapse === true && setInventoryCollapse(false);
   };
+
+  // checking for app update
+  useEffect(() => {
+    const message = appUpdate?.checkingForUpdate();
+    // Handling the update available scenario
+    appUpdate?.updateAvailable().then((version) => {
+      if (version) {
+        setAvailableUpdateMsg({ ...availableUpdateMsg, version: version });
+      }
+    });
+  }, []);
 
   useEffect(() => {}, [
     sidenavToggleState,
@@ -189,21 +210,36 @@ const SideNav = (props) => {
       ? "sidebar_list-ar"
       : "sidebar_list";
 
-     const updaetAvailableHandler  = () => {
-      Swal.fire({
-        title: "Update Available",
-        text: "You won't be able to revert this!",
-        showCancelButton: true,
-        confirmButtonColor: "#3085d6",
-        cancelButtonColor: "#d33",
-        confirmButtonText: "Yes, delete it!",
-      }).then((result) => {
-        if (result.isConfirmed) {
+  const updaetAvailableHandler = () => {
+    setShowUpdateDownloadMD(!showUpdateDownloadMD);
+  };
+
+  const updateNowHandler = () => {
+    // orun only if update available
+    if (availableUpdateMsg?.version) {
+      const updateDownload = appUpdate?.downloadUpdate();
+      updateDownload &&
+        setAvailableUpdateMsg({
+          ...availableUpdateMsg,
+          message: updateDownload,
+        });
+      appUpdate?.updateDownloadProgress((downloadProgress) => {
+        if (downloadProgress) {
+          const progressMessage = `Download speed: ${downloadProgress.bytesPerSecond} - Downloaded ${downloadProgress.percent}% (${downloadProgress.transferred}/${downloadProgress.total})`;
+          setAvailableUpdateMsg((prevState) => ({
+            ...prevState,
+            downloadProgress: Number(downloadProgress.percent).toFixed(2),
+            message: progressMessage,
+          }));
         }
       });
-     }
+    }
+  };
 
-
+  // quiteAndInstall application
+  const quiteAndInstall = () => {
+    appUpdate?.quitAndInstall();
+  };
 
   return (
     <div
@@ -235,24 +271,29 @@ const SideNav = (props) => {
         <ul className={sidebarList}>
           {!isLogoutOnly && (
             <>
-              <li>
-                <NavLink
-                  // to="/"
-                  className={(navData) =>
-                    navData.isActive ? "aTag active" : "aTag"
-                  }
-                  style={{
-                    justifyContent: "center",
-                    backgroundColor: "var(--white-color)",
-                    color: "var(--main-bg-color)",
-                  }}
-                  onClick={updaetAvailableHandler}
-                >
-                  {/* <HiHome className="menu_icons" /> */}
-                  <span className="sidebar_item">{t("Update Available")}</span>
-                </NavLink>
-                <span className="tooltip">{t("Update Available")}</span>
-              </li>
+              {availableUpdateMsg?.version && (
+                <li>
+                  <NavLink
+                    // to="/"
+                    className={(navData) =>
+                      navData.isActive ? "aTag active" : "aTag"
+                    }
+                    style={{
+                      justifyContent: "center",
+                      backgroundColor: "var(--white-color)",
+                      color: "var(--main-bg-color)",
+                    }}
+                    onClick={updaetAvailableHandler}
+                  >
+                    {/* <HiHome className="menu_icons" /> */}
+                    <span className="sidebar_item">
+                      {t("Update Available")}
+                    </span>
+                  </NavLink>
+                  <span className="tooltip">{t("Update Available")}</span>
+                </li>
+              )}
+
               <li>
                 <NavLink
                   to="/"
@@ -900,6 +941,13 @@ const SideNav = (props) => {
           )}
         </ul>
       </div>
+      <UpdateDownloadModal
+        setModalOpen={setShowUpdateDownloadMD}
+        modalOpen={showUpdateDownloadMD}
+        updateMessage={availableUpdateMsg}
+        updateNowHandler={updateNowHandler}
+        quiteAndInstall={quiteAndInstall}
+      />
     </div>
   );
 };

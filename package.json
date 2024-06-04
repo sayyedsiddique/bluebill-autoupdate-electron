@@ -1,7 +1,7 @@
 {
   "name": "bluebill-pos-web",
   "description": "electron react second app on same folder structure",
-  "version": "0.2.0",
+  "version": "2.2.0",
   "main": "public/electron.js",
   "private": true,
   "author": "sayyed siddique",
@@ -139,7 +139,7 @@
     "electron-builder": "^24.4.0",
     "wait-on": "^7.0.1"
   },
-  "repository": "https://github.com/sayyedsiddique/blue_bill_auto_update_electron",
+  "repository": "https://github.com/sayyedsiddique/bluebill-autoupdate-electron",
   "build": {
     "appId": "ezygen.blubill.app",
     "productName": "BlueBillPOS",
@@ -152,7 +152,7 @@
       {
         "provider": "github",
         "owner": "sayyedsiddique",
-        "repo": "electron-auto-update"
+        "repo": "bluebill-autoupdate-electron"
       }
     ],
     "directories": {

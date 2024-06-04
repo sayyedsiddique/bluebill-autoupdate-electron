@@ -100,7 +100,7 @@ const TopBar = (props) => {
 
     useEffect(() => {
       console.log("headerUpdateCHala")
-      const message = appUpdate?.getAppAvailableUpdate()
+      const message = appUpdate?.checkingForUpdate()
       setAppUpdateMessage(message)
      console.log("message... ", message)
     },[])

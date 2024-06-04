@@ -206,16 +206,57 @@ async function getMachineId() {
   }
 }
 
-function getAppAvailableUpdate() {
-  const message = ipcRenderer.sendSync("GET_APP_UPDATE");
-  console.log("messageP... ", message);
-  return message;
-}
-
 contextBridge.exposeInMainWorld("getDeviceFingerPrint", {
   getMachineId: getMachineId,
 });
 
+function checkingForUpdate() {
+  const message = ipcRenderer.sendSync("CHECK_FOR_UPDATE");
+  console.log("messagePreload... ", message);
+  return message;
+}
+
+function updateAvailable() {
+  return new Promise((resolve) => {
+    ipcRenderer.once("update-available", (event, version) => {
+      console.log("UpdateAvailable:", version);
+      resolve(version);
+    });
+  });
+}
+
+function updateNotAvailable() {
+  const message = ipcRenderer.sendSync("UPDATE_NOT_AVAILABLE");
+  console.log("messagePreload... ", message);
+  return message;
+}
+
+function downloadUpdate() {
+  const message = ipcRenderer.sendSync("DOWNLOAD_UPDATE");
+  console.log("messagePreload... ", message);
+  return message;
+}
+
+function updateDownloadProgress(callback) {
+  ipcRenderer.on("download-progress", (event, progressObj) => {
+    console.log("Download progress:", progressObj);
+    const logMessage = `Download speed: ${progressObj.bytesPerSecond} - Downloaded ${progressObj.percent}% (${progressObj.transferred}/${progressObj.total})`;
+    console.log(logMessage);
+    callback(progressObj);
+  });
+}
+
+function quitAndInstall() {
+  const message = ipcRenderer.sendSync("QUIT_AND_INSTALL");
+  // console.log("messagePreload... ", message);
+  // return message;
+}
+
 contextBridge.exposeInMainWorld("appUpdate", {
-  getAppAvailableUpdate: getAppAvailableUpdate,
+  checkingForUpdate: checkingForUpdate,
+  updateAvailable: updateAvailable,
+  updateNotAvailable: updateNotAvailable,
+  downloadUpdate: downloadUpdate,
+  updateDownloadProgress: updateDownloadProgress,
+  quitAndInstall: quitAndInstall
 });
